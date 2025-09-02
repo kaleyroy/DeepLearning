@@ -1,0 +1,32 @@
+{
+    "model_type": "PyTorch Shallow Neural Network",
+    "model_config": {
+        "input_size": 2,
+        "hidden_size": 20,
+        "output_size": 2,
+        "activation": "relu"
+    },
+    "training_config": {
+        "learning_rate": 0.01,
+        "weight_decay": 0.001,
+        "n_epochs": 1000,
+        "batch_size": 32,
+        "device": "cuda"
+    },
+    "performance": {
+        "validation": {
+            "loss": 0.571657121181488,
+            "accuracy": 0.68,
+            "precision": 0.6802884615384616,
+            "recall": 0.68,
+            "f1_score": 0.6798719487795117
+        },
+        "test": {
+            "loss": 0.5548312067985535,
+            "accuracy": 0.675,
+            "precision": 0.6764290755116442,
+            "recall": 0.675,
+            "f1_score": 0.6743405395926751
+        }
+    }
+}

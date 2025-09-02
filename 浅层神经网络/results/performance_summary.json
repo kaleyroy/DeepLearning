@@ -1,0 +1,30 @@
+{
+    "validation_metrics": {
+        "accuracy": 0.64,
+        "precision": 0.6666666666666665,
+        "recall": 0.64,
+        "f1_score": 0.625
+    },
+    "test_metrics": {
+        "accuracy": 0.545,
+        "precision": 0.5552079499447921,
+        "recall": 0.545,
+        "f1_score": 0.5229482844486383
+    },
+    "model_parameters": {
+        "hidden_size": 10,
+        "learning_rate": 0.01,
+        "n_iterations": 2000,
+        "regularization": 0.01,
+        "activation": "relu"
+    },
+    "final_loss": 0.7385335606386672,
+    "data_info": {
+        "n_samples": 1000,
+        "n_features": 2,
+        "n_classes": 2,
+        "train_size": 700,
+        "val_size": 100,
+        "test_size": 200
+    }
+}

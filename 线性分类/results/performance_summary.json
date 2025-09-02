@@ -1,0 +1,20 @@
+{
+    "validation_metrics": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0
+    },
+    "test_metrics": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0
+    },
+    "model_parameters": {
+        "learning_rate": 0.1,
+        "n_iterations": 1000,
+        "regularization": 0.01,
+        "final_loss": 0.09695406555015745
+    }
+}
