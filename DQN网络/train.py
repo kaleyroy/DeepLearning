@@ -215,6 +215,10 @@ class Trainer:
         Args:
             save_path: 保存路径
         """
+        # 设置中文字体
+        plt.rcParams['font.sans-serif'] = ['SimHei']  # 使用黑体
+        plt.rcParams['axes.unicode_minus'] = False  # 解决负号显示问题
+        
         fig, axes = plt.subplots(2, 2, figsize=(14, 10))
         
         # 1. 奖励曲线
@@ -288,7 +292,11 @@ def main():
     
     if args.test:
         # 测试模式
-        trainer.test(model_path=args.test, render=not args.no_render)
+        trainer.test(
+            model_path=f"./models/dqn_{args.env}_final.pth",
+            episodes=3,
+            render=not args.no_render
+        )
     else:
         # 训练模式
         agent, stats = trainer.train()
